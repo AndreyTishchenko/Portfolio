@@ -1,0 +1,1095 @@
+:root{
+    --border-light: #C1B6AD;
+    --border-dark: #665F55;
+    --background-body: #E1D4C9;
+    --background-container: #665F55;
+    --background-backdrop: #403F3DCC;
+    --text-dark: #403F3D;
+    --text-light: #E1D4C9;
+    --text-accent: #B0907A;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.dowland_button:hover{
+    cursor: pointer;
+}
+
+.social_networks svg{
+    cursor: pointer;
+}
+
+.div_with_picture{
+    border-radius: 50px;
+    height: 310px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+#Enjoy video{
+    position:absolute;
+    object-fit: fill;
+    width: 1360px;
+    border-radius: 40px;
+    height: 644px;
+    z-index: -10;
+}
+
+.main-div{
+    width: 1360px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.menu-btn {
+	width: 44px;
+	height: 44px;
+	position: relative;
+    border: 1px solid black;
+    border-radius: 100px;
+	z-index:2;
+	overflow: hidden;
+}
+
+.menu-btn span {
+	width: 16px;
+	height: 1.5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(1) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+.burger-menu-block {
+	position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+	top: 100px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background: var(--background-body);
+	transform: scale(0) translateX(100%);
+	transition: transform 0.5s; 
+}
+
+.burger-menu-block.active {
+	transform: scale(1) translateX(0);
+}
+
+.burger-menu-block li{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.burger-menu-block .last_li{
+    margin-top: 100px;
+}
+
+body{
+    margin: 0;
+    background-color: var(--background-body);
+}
+
+h1{
+    font-size: 72px;
+    font-weight: 600;
+    font-family: Inter;
+    line-height: 105%;
+}
+
+h2{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: Inter;
+    line-height: 125%;
+    margin: 0;
+}
+
+.h2{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: Inter;
+    line-height: 125%;
+    margin: 0;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    font-family: Inter;
+    margin: 0;
+}
+
+.medium{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--text-dark);
+    font-family: Inter;
+}
+
+.caption{
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 140%;
+    color: var(--text-dark);
+    font-family: Inter;
+}
+
+.dark-text{
+    color: var(--text-dark);
+}
+
+.light-text{
+    color: var(--text-light);
+}
+
+.menu-logo{
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+
+.linkbutton_style{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    font-family: Inter;
+    color: var(--text-dark);
+    border: 0px;
+}
+
+.accent-text{
+    color: var(--text-accent);
+    font-style: italic;
+    background-size: cover;
+}
+
+#Enjoy{
+    height: 644px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border-radius: 40px;
+    background-position: center;
+    background-size: cover;
+}
+
+.visible{
+    overflow: hidden;
+    width: 1152px;
+}
+
+li{
+    list-style-type: none;
+}
+
+header{
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header_ul{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+.Content_of_Enjoy{
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 444px;
+    margin-left: 100px;
+}
+
+.Content_of_Enjoy h1{
+    display: inline-block;
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+}
+
+nav ul{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+.another_li{
+    margin-right: 40px;
+}
+
+#Favourites_Coffee{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.dowland_button{
+    width: 200px;
+    height: 64px;
+    border-radius: 100px;
+    border: 1px solid black;
+    background-color: rgb(0,0,0,0);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    transition: 1s;
+}
+
+.google-div{
+    margin-top: 5px;
+}
+
+.dowland_button .apple-div{
+    margin-right: 65px;
+    margin-top: 5px;
+}
+
+.social_networks svg{
+    transition: 1s;
+    border-radius: 100px;
+}
+
+.social_networks svg:hover{
+    background-color: var(--background-body);
+}
+
+.social_networks svg path{
+    transition: 1s;
+}
+
+.social_networks svg:hover path{
+    stroke: var(--text-dark);
+}
+
+.dowland_button div{
+    margin-right: 44px;
+}
+
+.dowland_button svg{
+    margin-left: 23px;
+}
+
+.dowland_button svg path{
+    transition: 1s;
+}
+
+.dowland_button:hover svg path{
+    fill: var(--text-light) !important;
+}
+
+
+.dowland_button p{
+    transition: 1s;
+}
+
+.dowland_button:hover p{
+    color: var(--text-light);
+}
+.dowland_button:hover{
+    background-color: var(--background-container);
+    color: var(--text-light);
+}
+
+#Enjoy a::before{
+    content: none;
+}
+
+.button-type-1 svg {
+    opacity: 0;
+    width: 0px;
+    transition: 1s;
+}
+
+.button-type-1:hover svg{
+    opacity: 1;
+    width: 30px;
+}
+
+#Mobile_App{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-active:hover{
+    cursor:default;
+}
+
+.menu-active::before{
+    content: "";
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    cursor:default;
+    height: 2px;
+    background-color: black;
+    transition: 1s;
+    transform: scale(1) !important;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.buttons_for_dowland{
+    display: flex;
+}
+
+#About{
+    margin: auto;
+}
+
+.description-of-drink .title{
+    margin-top: 20px;
+}
+
+.content_of_MobileApp{
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.google{
+    margin-left: 20px;
+}
+
+#About h2{
+    margin-bottom: 40px;
+}
+
+#Mobile_App{
+    display: flex;
+    margin-top: 100px;
+}
+
+.pictures-in-about div{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 660px;
+}
+
+.contacts p a::before{
+    background-color: var(--text-light);
+}
+
+.pictures-in-about img{
+    transition: 1s;
+}
+
+.pictures-in-about img:hover{
+    transform: scale(0.9);
+}
+
+.small_picture{
+    height: 430px;
+}
+
+.big_picture{
+    height: 590px;
+}
+
+a{
+    text-decoration: none;
+    position: relative;
+}
+
+a::before{
+    content: "";
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: 1s;
+    transform: scaleX(0);
+}
+
+.logo::before{
+    display: none;
+}
+
+a:hover::before{
+    width: 100%;
+    transform: scaleX(1);
+}
+
+.button-type-1{
+    width: 200px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    border-radius: 100px;
+    gap: 8px;
+    background-color: var(--background-body);
+}
+
+.pictures-in-about .container-for-pictures{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pictures-in-about{
+    display: flex;
+    justify-content: space-between;
+    height: 1060px;
+}
+
+footer{
+    background-color: var(--background-container);
+    height: 450px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    border-radius: 40px;
+    align-items: center
+}
+
+.footer_content{
+    width: 530px;
+    height: 250px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social_networks{
+    display: flex;
+    width: 204px;
+    justify-content: space-between;
+}
+
+.contacts{
+    margin-right: 373px;
+    height: 186px;
+}
+
+.contacts h3{
+    margin: 0;
+    margin-bottom: 37px;
+}
+
+.contacts span{
+    margin-left: 5px;
+}
+
+#Favourites_Coffee h2{
+    margin-top: 100px;
+}
+
+.contacts p{
+    display: block;
+    margin-bottom: 18px;
+}
+
+.buttons_in_controller .tea{
+    width:90px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.dowland_button .medium{
+    font-weight: 600;
+}
+
+.dowland_button p{
+    text-align: left;
+}
+
+.text-desctop_and_tablet{
+    display: block;
+}
+
+.text-mobile{
+    display: none;
+}
+
+#Enjoy .mobile{
+    display: none;
+}
+
+#Enjoy .desctop{
+    display: block;
+}
+
+.nav-ul{
+    margin-left: 366px;
+}
+
+.last_li{
+    margin-left: 327px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.description-of-drink{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price{
+    margin-bottom: 20px;
+}
+
+.description-of-drink p{
+    margin-top: 12px;
+    height: 72px;
+}
+
+.price{
+    margin-top: 12px;
+}
+
+.burger_menu{
+    display: none;
+}
+
+.pictures-in-about_tablet{
+    display: none;
+}
+
+object{
+    display: block;
+}
+
+.pictures-in-about_tablet div {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 660px;
+}
+
+.burger-menu-block{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 1360px) and (min-width: 769px){
+    #Enjoy video{
+        width: 90%;
+    }
+
+    .main-div{
+        width:90%;
+    }
+
+    .nav-ul{
+        margin-left: 0px;
+    }
+
+    .last_li{
+        margin-left: 0px;
+    }
+
+    .mobile-screens img{
+        width: 90%;
+    }
+
+    .contacts {
+        margin-right: 10%;
+    }
+
+    .big_picture{
+        width: 90%;
+    }
+
+    .small_picture{
+        width: 24%;
+    }
+
+    .pictures-in-about div{
+        width: 90%;
+    }
+
+    #controller_menu h1 {
+        width: 50%;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .big_picture{
+        height: 590px;
+    }
+
+    .content_menu{
+        display: none;
+    }
+
+    #Enjoy video{
+        width: 688px;
+        height: 644px;
+    }
+
+    .burger-menu-block{
+        display: block;
+    }
+
+    .last_li{
+        margin-left: 0px;
+        margin-right: 30px;
+    }
+
+    .menu-logo{
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .main-div{
+        width: 688px;
+    }
+    .nav-ul{
+        display: none;
+    }
+
+
+    
+    .last_li{
+        display: none;
+    }
+
+    .burger_menu{
+        display: block;
+    }
+
+    .header_ul{
+        display: flex;
+        align-items: center;
+    }
+
+    .Content_of_Enjoy{
+        margin-left: 60px;
+    }
+
+    .pictures-in-about{
+        display: none;
+    }
+    .pictures-in-about_tablet{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 1220px;
+    }
+
+    #Mobile_App{
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    footer{
+        margin: 0;
+    }
+
+    footer h2{
+        margin-top: 100px;
+    }
+
+    .mobile-screens{
+        margin-top: 100px;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: start;
+        height: 736px;
+        margin-bottom: 40px;
+        align-items: baseline;
+    }
+
+    .social_networks{
+        margin-top: 40px;
+    }
+
+    .footer_content{
+        margin: 0;
+        width: 568px;
+    }
+
+    .contacts{
+        margin-left: 60px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 258px;
+    }
+
+    .pictures-in-about_tablet div {
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 688px;
+    }
+
+
+
+
+
+    #controller_menu h2{
+        width: auto;
+    }
+
+    .content_of_MobileApp{
+        width: auto;
+    }
+
+
+
+    /* HOVER OFF______________________________________________________________________________________________________ */
+
+    .button-type-1 svg{
+        opacity: 1;
+        width: 30px;
+    }
+
+    .previous_page:hover svg {
+        background-color: rgb(0,0,0,0);
+    }
+
+    .previous_page:hover svg path {
+        stroke: var(--text-dark) !important;
+    }
+
+
+    .next_page:hover svg {
+        background-color: rgb(0,0,0,0);
+    }
+
+    .next_page:hover svg path {
+        stroke: var(--text-dark) !important;
+    }
+
+
+
+
+
+
+
+    .previous_page:active svg {
+        background-color: var(--background-container);
+    }
+
+    .previous_page:active svg path {
+        stroke: var(--text-light) !important;
+    }
+
+
+    .next_page:active svg {
+        background-color: var(--background-container);
+    }
+
+    .next_page:active svg path {
+        stroke: var(--text-light) !important;
+    }
+
+
+
+    .dowland_button:hover {
+        background-color: rgb(0,0,0,0);
+    }
+
+    .dowland_button:hover p {
+        color: var(--text-dark);
+    }
+
+    .dowland_button:hover svg path {
+        fill: var(--text-dark) !important;
+    }
+
+    .social_networks svg:hover {
+        background-color: rgb(0,0,0,0);
+    }
+
+    .social_networks svg:hover path {
+        stroke: var(--text-light);
+    }
+
+    a:hover::before {
+        width: 100%;
+        transform: scaleX(0);
+    }
+
+    .buttons_in_controller .button_in_controller:not():hover {
+        background-color: rgb(0, 0, 0,0) !important;
+    }
+
+    .buttons_in_controller .button_in_controller:not():hover p {
+        color: var(--text-dark);
+    }
+
+    .buttons_in_controller .button_in_controller:not():hover div {
+        background-color: var(--border-light);
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 452px){
+    .main-div{
+        width:90%;
+    }
+
+    #Enjoy video{
+        width: 90%;
+    }
+
+    .nav-ul{
+        margin-left: 0px;
+    }
+
+    .last_li{
+        margin-left: 0px;
+    }
+
+    .mobile-screens img{
+        width: 90%;
+    }
+
+    .contacts{
+        margin-right: 0px;
+        width: 90%;
+    }
+
+    .big_picture{
+        width: 90%;
+    }
+
+    .small_picture{
+        width: 24%;
+    }
+
+    .pictures-in-about div{
+        width: 90%;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .description-of-drink {
+        margin-left: 10%;
+    }
+
+    .footer_content{
+        width: 90%;
+    }
+
+    .pictures-in-about_tablet div{
+        width: 90%;
+    }
+
+    .Content_of_Enjoy{
+        margin-left: 5%;
+    }
+    
+}
+
+
+@media screen and (max-width: 452px){
+    #Enjoy video{
+        width: 348px;
+        height: 552px;
+    }
+
+    h1{
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 115%;
+    }
+
+    #Enjoy .mobile{
+        display: block;
+    }
+
+    .text-desctop_and_tablet{
+        display: none;
+    }
+
+    .Content_of_Enjoy p{
+        text-align: left;
+    }
+    
+    .text-mobile{
+        display: block;
+    }
+
+    .pictures-in-about_tablet div {
+        width: 348px;
+    }
+
+    h2{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    .main-div{
+        width: 348px;
+    }
+
+    .Content_of_Enjoy{
+        margin-left: 16px;
+        width: auto;
+        height: 432px;
+        width: 316px;
+    }
+
+    .buttons_for_dowland{
+        flex-direction: column;
+    }
+
+    .google{
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .mobile-screens{
+        margin-top: 40px;
+    }
+
+    .mobile-screens img{
+        width: 348px;
+    }
+
+    .footer_content{
+        width: auto;
+    }
+
+    .contacts{
+        margin: 0;
+        margin-left: 16px;
+        margin-bottom: 60px;
+    }
+
+    footer{
+        align-items: start;
+        height: 526px;
+    }
+
+    footer h2{
+        margin-top: 60px;
+        margin-left: 16px;
+    }
+
+    .social_networks{
+        margin-left: 16px;
+    }
+
+    #Enjoy .desctop{
+        display: none;
+    }
+
+    #Enjoy{
+        height: 552px;
+    }
+
+    .content_of_MobileApp{
+        height: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+    }
+}
