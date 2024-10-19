@@ -1,0 +1,164 @@
+/* Основные стили */
+body {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.project-list::after{
+    display: none;
+}
+
+.container {
+    width: 80%;
+    background-color: #1e1e1e;
+    margin-left: 10%;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.Specialization{
+    text-align: center;
+}
+
+#hard_skills .project-list li{
+    color: #e5c07b;
+}
+
+/* Заголовки */
+.ide-header, .ide-footer {
+    color: #dcdcdc;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.ide-header h1 {
+    font-size: 36px; /* Увеличен размер заголовка */
+    color: #e06c75;
+    width: 100%;
+}
+
+.ide-footer p {
+    font-size: 12px;
+    color: #808080;
+    text-align: left;
+}
+
+/* Секции */
+.ide-section {
+    margin: 30px 0;
+    padding: 10px 20px; /* Увеличена табуляция */
+}
+
+.ide-section h2 {
+    font-size: 24px; /* Увеличен размер заголовка секции */
+    color: #d19a66;
+}
+
+.ide-section p, .resume-download {
+    margin: 10px 0;
+    color: #e5c07b;
+}
+
+.hard_skills-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.hard_skills-list li{
+    color: #e5c07b;
+    padding: 10px;
+    border: 1px solid;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: color 1s ease;
+    transition: background-color 1s ease;
+}
+
+.hard_skills-list li:hover{
+    color: #1e1e1e;
+    background-color: #e5c07b;
+}
+
+/* Ссылки */
+a {
+    color: #98c379;
+    text-decoration: none;
+    border-bottom: 1px dashed #98c379;
+}
+
+a:hover {
+    color: #d19a66;
+    border-bottom: 1px solid #d19a66;
+}
+
+.resume-download {
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.social-links a {
+    color: #98c379;
+    margin-right: 8px;
+}
+
+/* Список проектов с эффектом сдвига */
+.project-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.project-list li {
+    padding: 5px 0;
+    transition: transform 0.2s ease;
+    color: #d4d4d4;
+}
+
+.project-list li:hover {
+    transform: translateX(10px);
+}
+
+/* Анимация печати текста */
+.typing-animation {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}
+
+.typing-animation::after {
+    content: "|";
+    display: inline-block;
+    vertical-align: middle;
+    color: #e06c75;
+    margin-left: 2px;
+    animation: blink-caret 1s step-end infinite;
+}
