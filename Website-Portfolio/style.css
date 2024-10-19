@@ -38,9 +38,16 @@ body {
     border-bottom: 1px solid #333;
 }
 
+
+
+.ide-footer{
+    display: flex;
+    justify-content: center;
+}
+
 .ide-header h1 {
     font-size: 36px; /* Увеличен размер заголовка */
-    color: #e06c75;
+    color: #e5c07b;
     width: 100%;
 }
 
@@ -52,18 +59,22 @@ body {
 
 /* Секции */
 .ide-section {
-    margin: 30px 0;
+    margin: 0px 0;
     padding: 10px 20px; /* Увеличена табуляция */
 }
 
 .ide-section h2 {
     font-size: 24px; /* Увеличен размер заголовка секции */
-    color: #d19a66;
+    color: #AC4108;
 }
 
 .ide-section p, .resume-download {
     margin: 10px 0;
-    color: #e5c07b;
+    transition: transform 0.2s ease;
+}
+
+.ide-section p{
+    color: white;
 }
 
 .hard_skills-list{
@@ -76,9 +87,9 @@ body {
 }
 
 .hard_skills-list li{
-    color: #e5c07b;
+    color: white;
     padding: 10px;
-    border: 1px solid;
+    border: 1px solid #e5c07b;
     display: inline-block;
     margin: 10px;
     border-radius: 10px;
@@ -94,13 +105,13 @@ body {
 
 /* Ссылки */
 a {
-    color: #98c379;
+    color: #708240;
     text-decoration: none;
     border-bottom: 1px dashed #98c379;
 }
 
 a:hover {
-    color: #d19a66;
+    color: #AC4108;
     border-bottom: 1px solid #d19a66;
 }
 
@@ -108,16 +119,28 @@ a:hover {
     font-size: 18px;
     display: inline-block;
     margin-top: 10px;
+    border-bottom: 1px dashed #98c379;
+}
+
+.resume-download:hover {
+    transform: translateX(10px);
 }
 
 .social-links {
     margin-top: 20px;
     font-size: 16px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .social-links a {
-    color: #98c379;
     margin-right: 8px;
+}
+
+.social-links a:hover {
+    color: #d19a66;
 }
 
 /* Список проектов с эффектом сдвига */
@@ -154,11 +177,37 @@ a:hover {
     50% { border-color: transparent; }
 }
 
-.typing-animation::after {
-    content: "|";
-    display: inline-block;
-    vertical-align: middle;
-    color: #e06c75;
-    margin-left: 2px;
-    animation: blink-caret 1s step-end infinite;
+@media screen and (max-width: 782px) {
+    .ide-header h1 {
+        font-size: 26px; /* Увеличен размер заголовка */
+    }
+
+    .ide-section h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .ide-header h1 {
+        font-size: 20px; /* Увеличен размер заголовка */
+    }
+
+    .ide-section h2 {
+        font-size: 16px;
+    }
+    
+    .lycense{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .ide-header h1 {
+        font-size: 15px; /* Увеличен размер заголовка */
+        text-align: center;
+    }
+
+    .ide-section h2 {
+        font-size: 18px;
+    }
 }
