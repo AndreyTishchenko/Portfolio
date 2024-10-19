@@ -13,3 +13,5 @@ All these projects I made while I was passing the rs-school courses
 3. Eldrithc Horror: [Link](https://andreytishchenko.github.io/Portfolio/Eldritch-Horror/)
 
    TT: https://github.com/rolling-scopes-school/tasks/tree/master/tasks/eldritch-horror
+
+4. Spinanga: https://andreytishchenko.github.io/Portfolio/Spinanga%20(casino)/
