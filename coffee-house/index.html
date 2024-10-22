@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style-for-desctop.css">
     <link rel="stylesheet" href="styles/slyder-stiles.css">
@@ -71,34 +72,16 @@
                                 <path d="M36.5 30H24M24 30L30 24M24 30L30 36" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
-
-                        <div class="slider">
-                            <div class="slider-line">
-                                <div class="slide">
-                                    <img src="assets/icons/coffee-slider-1.svg" alt="">
-                                    <h3 class="name_of_drink">S’mores Frappuccino</h3>
-                                    <p class="description_of_drink medium dark-text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                                    <h3 class="price_of_drink">$5.50</h3>
-                                </div>
-
-                                <div class="slide">
-                                    <img src="assets/icons/coffee-slider-2.svg" alt="">
-                                    <h3 class="name_of_drink">Caramel Macchiato</h3>
-                                    <p class="description_of_drink medium dark-text">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
-                                    <h3 class="price_of_drink">$5.00</h3>
-                                </div>
-
-                                <div class="slide">
-                                    <img src="assets/icons/coffee-slider-3.svg" alt="">
-                                    <h3 class="name_of_drink">Ice coffee</h3>
-                                    <p class="description_of_drink medium dark-text">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
-                                    <h3 class="price_of_drink">$4.50</h3>
-                                </div>
+                        
+                        <div class="swiper" id="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" id="1">Hello world</div>
+                                <div class="swiper-slide" id="2">Hello world</div>
+                                <div class="swiper-slide" id="3">Hello world</div>
                             </div>
                         </div>
 
                         <button class="next_page" onclick="next_page()">
-                            <!-- <img src="assets/icons/button-icon-dark.svg" alt="next_page"> -->
                             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="59" height="59" rx="29.5" stroke="#665F55"/>
                                 <path d="M36.5 30H24M24 30L30 24M24 30L30 36" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
@@ -223,8 +206,8 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/slider.js"></script>
-    <script src="scripts/swipe-slider.js"></script>
 </body>
 </html>
