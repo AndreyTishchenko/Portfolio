@@ -3,50 +3,53 @@
     justify-content: space-between;
 }
 
+
+.swiper{
+    width: 480px;
+}
+
+.swiper-slide{
+    max-width: 100%;
+    height: auto;
+}
+
+.swiper-slide p{
+    margin: 16px auto;
+    font-family: 'Inter';
+}
+
+.progress{
+    background-color: var(--border-dark);
+    width: var(--progress, 0%);
+    border-radius: 100px;
+    height: 4px;
+}
+
+.swiper-wrapper{
+    height: auto;
+}
+
+.swiper-pagination-bullet{
+    width: 40px;
+    aspect-ratio: 10/1;
+    background-color: var(--border-light);
+    border-radius: 100px;
+    opacity: unset;
+    height: auto;
+}
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
 .price_of_drink{
     margin-top: 16px;
 }
 
 .name_of_drink{
     margin-bottom: 16px;
-}
-
-.slider{
-    width: 480px;
-    overflow: hidden;
-    height: 640px;
-}
-
-.slider-line{
-    width: 480px;
-    display: flex;
-    position: relative;
-    transition: all 5s;
-    left: 0px;
-}
-
-.slide{
-    width: 1152px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.slide-controller{
-    height: 4px;
-    width: 144px;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.slide-controller button{
-    width: 40px;
-    height: 6px;
-    border-radius: 100px;
-    border-color: rgb(0, 0, 0, 0);
-    background-color: var(--border-light);
 }
 
 
@@ -107,58 +110,9 @@
     padding: 0%;
 }
 
-.slide-controller button{
-    padding: 0px;
-    border: 0px;
-}
-
-.progress{
-    width: 0%;
-    height: 100%;
-    border-radius: 100px;
-    background-color: var(--border-dark);
-}
-
-.progress.active{
-    animation-duration: 3s;
-    animation-name: progress_bar;
-}
-
-@keyframes progress_bar {
-    from{
-        width: 0%;
-    }
-
-    to{
-        width: 100%;
-    }
-}
-
-
-@media screen and (max-width: 1360px) and (min-width: 769px){
-    .slider{
-        max-width: 480px;
-    }
-}
-
-@media screen and (max-width: 768px)  {
-
-}
-
-@media screen and (max-width: 767px) and (min-width: 452px) {
-    .slider{
-        max-width: 480px;
-    }
-}
-
 @media screen and (max-width: 452px)  {
     .previous_page{
         display: none;
-    }
-
-    .slide img{
-        width: 348px;
-        height: 348px;
     }
 
     .next_page{
