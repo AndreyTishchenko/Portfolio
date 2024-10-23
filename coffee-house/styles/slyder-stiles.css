@@ -10,8 +10,12 @@
 
 .swiper-slide{
     max-width: 100%;
-    background-color: red;
     height: auto;
+}
+
+.swiper-slide p{
+    margin: 16px auto;
+    font-family: 'Inter';
 }
 
 .progress{
@@ -33,6 +37,13 @@
     opacity: unset;
     height: auto;
 }
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
 .price_of_drink{
     margin-top: 16px;
 }

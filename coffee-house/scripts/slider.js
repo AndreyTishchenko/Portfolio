@@ -4,9 +4,9 @@ new Swiper('.swiper', {
   spaceBetween: 10,
   grabCursor: false,
   touchEventsTarget: 'container',
-  autoplay: {
-    delay: 2500
-  },
+  // autoplay: {
+  //   delay: 2500
+  // },
 pagination: {
     el: ".swiper_pagination",
     renderBullet: function (index, className) {
@@ -19,11 +19,11 @@ pagination: {
   },
   allowTouchMove: true,
   on: {
-    autoplayTimeLeft(s, time, progress) {
-        const progressBar = document.querySelector('.swiper-pagination-bullet-active .progress');
-        progressBar.style.width = `${100 - progress * 100}%`;
-        console.log(progressBar.style.width)
-    },
+    // autoplayTimeLeft(s, time, progress) {
+    //     const progressBar = document.querySelector('.swiper-pagination-bullet-active .progress');
+    //     progressBar.style.width = `${100 - progress * 100}%`;
+    //     console.log(progressBar.style.width)
+    // },
     slideChange: function () {
       const progressBars = document.querySelectorAll('.swiper_pagination .progress');
       console.log(progressBars)
