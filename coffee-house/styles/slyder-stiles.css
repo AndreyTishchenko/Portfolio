@@ -11,9 +11,28 @@
 .swiper-slide{
     max-width: 100%;
     background-color: red;
+    height: auto;
 }
 
+.progress{
+    background-color: var(--border-dark);
+    width: var(--progress, 0%);
+    border-radius: 100px;
+    height: 4px;
+}
 
+.swiper-wrapper{
+    height: auto;
+}
+
+.swiper-pagination-bullet{
+    width: 40px;
+    aspect-ratio: 10/1;
+    background-color: var(--border-light);
+    border-radius: 100px;
+    opacity: unset;
+    height: auto;
+}
 .price_of_drink{
     margin-top: 16px;
 }
