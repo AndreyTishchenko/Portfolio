@@ -99,6 +99,10 @@ hr{
     margin-right: 8px;
 }
 
+.radio_buttons.active{
+    background-color: var(--border-dark);
+}
+
 .size_of_drink{
     width: 30px;
     height: 30px;
